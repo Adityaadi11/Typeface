@@ -5,24 +5,20 @@ i=1
 c=0
 def valid(s):
     s1=str(s)
-    s1=s1[::-1]
-    res=""
     for i,v in enumerate(s1):
         if int(v) not in dic:
-            return -1
-        else:
-            res+=str(dic[int(v)])
-    return int(res)
+            return False
+    return True
 
 while(c!=n):
 
     if i in dic:
-        ans=dic[i]
+        ans=i
         c+=1
     else:
         s1=valid(i)
-        if s1!=-1:
-            ans=s1
+        if s1:
+            ans=i
             c+=1
     i += 1
 print(ans)
