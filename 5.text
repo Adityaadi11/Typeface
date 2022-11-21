@@ -1,0 +1,6 @@
+1.First,collect the url of the website
+2.To get the URL of the website use request.url function
+3.To parse the Content of the page use beautiful soup
+4.Then identify the class ids of Test and image class
+5.To extract data in beautiful soup by using findall function with classid
+6.Finally,these id url are saved to get text and images seperately
